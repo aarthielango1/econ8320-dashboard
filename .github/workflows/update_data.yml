@@ -1,0 +1,41 @@
+name: Update BLS Data
+
+# Triggers the workflow on a schedule and allows manual triggers
+on:
+  schedule:
+    # BLS "Employment Situation" is usually released the first Friday of the month at 8:30 AM ET.
+    # This cron runs every Friday at 14:00 UTC (9:00 AM EST / 8:00 AM CST) to catch the release.
+    - cron: '0 14 * * 5'
+  workflow_dispatch: # Allows you to click "Run workflow" manually for testing
+
+permissions:
+  contents: write # Important: Allows the action to push changes back to the repo
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pandas requests
+
+    - name: Run data collection script
+      run: python data_collection.py
+
+    - name: Commit and push if changed
+      run: |
+        git config --global user.name 'Aarthi Elango'
+        git config --global user.email 'aarthielango1@gmail.com'
+        git add bls_data.csv
+        # Only commit if there are changes (i.e., new data found)
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update BLS data" && git push)
