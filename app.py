@@ -93,7 +93,7 @@ if df is not None:
     # Plotting both the Rate (%) and the absolute Level (people)
     fig = px.line(filtered_df, y=['Unemployment Rate', 'Unemployment Level'],
                   markers=True, title="Rate (%) vs Count (Thousands)")
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
 
   with tab2:
     st.subheader("Labor Demand")
@@ -102,7 +102,7 @@ if df is not None:
             c in filtered_df.columns]
     fig = px.line(filtered_df, y=cols, markers=True,
                   title="Total Jobs vs. Job Openings")
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
 
   with tab3:
     st.subheader("Wages & Costs")
@@ -110,7 +110,7 @@ if df is not None:
             c in filtered_df.columns]
     fig = px.line(filtered_df, y=cols, markers=True,
                   title="Hourly Earnings vs Cost Index")
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
 
   # Footer / Data Table
   with st.expander("See Raw Data"):
