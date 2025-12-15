@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7cdfc391-aff6-45c8-b861-2ca45d943932" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/update_data.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/econ8320-dashboard.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_collection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bls_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/bls_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_collection.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_collection.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +29,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "aarthielango1"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/aarthielango1/econ8320-dashboard.git",
+    "accountId": "b9ce0049-f490-4b6d-8385-38d2816f4da0"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -116,7 +122,7 @@
       <workItem from="1765421200916" duration="3305000" />
       <workItem from="1765507703528" duration="782000" />
       <workItem from="1765584078628" duration="101000" />
-      <workItem from="1765584196634" duration="5977000" />
+      <workItem from="1765584196634" duration="9734000" />
     </task>
     <servers />
   </component>
@@ -124,7 +130,7 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/econ8320_dashboard$data_collection.coverage" NAME="data_collection Coverage Results" MODIFIED="1765680667081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/econ8320_dashboard$data_collection.coverage" NAME="data_collection Coverage Results" MODIFIED="1765741729041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/econ8320_dashboard$app.coverage" NAME="app Coverage Results" MODIFIED="1765499687700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -16,7 +16,7 @@ def fetch_bls_data():
   headers = {'Content-type': 'application/json'}
 
   current_year = datetime.now().year
-  start_year = current_year - 2
+  start_year = current_year - 6
 
   data = json.dumps({
     "seriesid": list(SERIES_MAPPING.keys()),
