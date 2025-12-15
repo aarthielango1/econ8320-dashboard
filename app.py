@@ -108,7 +108,8 @@ if df is not None:
     st.subheader("Wages & Costs")
     cols = [c for c in ['Average Hourly Earnings', 'Employment Cost Index'] if
             c in filtered_df.columns]
-    fig = px.line(filtered_df, y=cols, markers=True,
+    plot_df = filtered_df[cols].ffill()
+    fig = px.line(plot_df, y=cols, markers=True,
                   title="Hourly Earnings vs Cost Index")
     st.plotly_chart(fig, width="stretch")
 
